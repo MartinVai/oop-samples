@@ -8,8 +8,8 @@ public class Test {
           new PrintWriter("vead.txt"),
           new PrintWriter("teated.txt"));
     } else {
-      logija = new KasureaLogija();
+      logija = new KäsureaLogija();
     }
-    new AmeerikaMaed(logija).alustaSoitu();
+    new AmeerikaMäed(logija).alustaSõitu();
   }
 }

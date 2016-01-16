@@ -1,3 +1,3 @@
 public interface Dokument {
-  boolean onVahemalt12Aastane();
+  boolean onVähemalt12Aastane();
 }

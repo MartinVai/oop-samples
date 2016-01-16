@@ -7,12 +7,12 @@ public class IdKaart {
     this.isikukood = isikukood;
   }
 
-  boolean onVahemalt12Aastane() {
+  boolean onVähemalt12Aastane() {
     int praeguneAasta = LocalDate.now().getYear();
-    return sunniaasta() <= praeguneAasta - 12;
+    return sünniaasta() <= praeguneAasta - 12;
   }
 
-  int sunniaasta() { // 4. praktikumi 2. harjutus
+  int sünniaasta() { // 4. praktikumi 2. harjutus
     int algus = Integer.parseInt(isikukood.substring(0, 1));
     int aasta = Integer.parseInt(isikukood.substring(1, 3));
     if (algus <= 2)
