@@ -1,18 +1,18 @@
 import java.io.PrintWriter;
 
 public class FailiLogija {
-  PrintWriter vigadeFail, teadeteFail;
+  PrintWriter hoiatusteFail, andmeFail;
 
-  FailiLogija(PrintWriter vigadeFail, PrintWriter teadeteFail) {
-    this.vigadeFail = vigadeFail;
-    this.teadeteFail = teadeteFail;
+  FailiLogija(PrintWriter hoiatusteFail, PrintWriter andmeFail) {
+    this.hoiatusteFail = hoiatusteFail;
+    this.andmeFail = andmeFail;
   }
 
   void salvestaTeade(String teade, boolean ohtlikViga) {
     if (ohtlikViga) {
-      vigadeFail.println(teade);
+      hoiatusteFail.println(teade);
     } else {
-      teadeteFail.println(teade);
+      andmeFail.println(teade);
     }
   }
 }
