@@ -1,9 +1,9 @@
 import java.time.LocalDate;
 
-public class ÕpilasPilet {
+public class Õpilaspilet {
   int sünniaasta;
 
-  ÕpilasPilet(int sünniaasta) {
+  Õpilaspilet(int sünniaasta) {
     this.sünniaasta = sünniaasta;
   }
 

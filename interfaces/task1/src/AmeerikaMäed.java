@@ -1,10 +1,10 @@
 public class AmeerikaMäed {
-  boolean vanusedSobivad(IdKaart[] idKaardid, ÕpilasPilet[] õpilasPiletid) {
+  boolean vanusedSobivad(IdKaart[] idKaardid, Õpilaspilet[] õpilaspiletid) {
     for (IdKaart id : idKaardid) {
       if (!id.onVähemalt12Aastane())
         return false;
     }
-    for (ÕpilasPilet pilet : õpilasPiletid) {
+    for (Õpilaspilet pilet : õpilaspiletid) {
       if (!pilet.onVähemalt12Aastane())
         return false;
     }

@@ -3,12 +3,12 @@ public class Test {
     IdKaart[] idKaardid = new IdKaart[]{
         new IdKaart("39108071234")
     };
-    ÕpilasPilet[] õpilasPiletid = new ÕpilasPilet[]{
-        new ÕpilasPilet(2001)
+    Õpilaspilet[] õpilaspiletid = new Õpilaspilet[]{
+        new Õpilaspilet(2001)
     };
 
     AmeerikaMäed ameerikaMäed = new AmeerikaMäed();
-    System.out.println(ameerikaMäed.vanusedSobivad(idKaardid, õpilasPiletid));
+    System.out.println(ameerikaMäed.vanusedSobivad(idKaardid, õpilaspiletid));
   }
 }
 
