@@ -1,4 +1,4 @@
-class KütuseMõõtja {
+public class KütuseMõõtja {
   Logija logija;
 
   KütuseMõõtja(Logija logija) {
@@ -7,6 +7,6 @@ class KütuseMõõtja {
 
   void mõõdaKütust(Vagun vagun) {
     // logi siin vaguni kütusetase
-    // kui kütusetase on alla 10 ühiku, siis logi hoiatus
+    // kui kütusetase on alla 10 ühiku, siis logi ka hoiatus
   }
 }

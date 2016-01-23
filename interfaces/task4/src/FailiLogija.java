@@ -8,8 +8,8 @@ public class FailiLogija {
     this.andmeFail = andmeFail;
   }
 
-  void salvestaTeade(String teade, boolean ohtlikViga) {
-    if (ohtlikViga) {
+  void salvestaTeade(String teade, boolean onHoiatus) {
+    if (onHoiatus) {
       hoiatusteFail.println(teade);
     } else {
       andmeFail.println(teade);
