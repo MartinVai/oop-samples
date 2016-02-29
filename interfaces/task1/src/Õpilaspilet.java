@@ -7,7 +7,7 @@ public class Õpilaspilet {
     this.sünniaasta = sünniaasta;
   }
 
-  boolean onVähemalt12Aastane() {
+  public boolean onVähemalt12Aastane() {
     return sünniaasta + 12 <= LocalDate.now().getYear();
   }
 }
