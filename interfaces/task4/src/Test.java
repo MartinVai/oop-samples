@@ -7,9 +7,7 @@ public class Test {
     Logija logija;
     // args on käsurea argumendid
     if (args.length == 1 && args[0].equals("kirjuta-faili")) {
-      logija = new FailiLogija(
-          new PrintWriter("hoiatused.txt"),
-          new PrintWriter("andmed.txt"));
+      logija = new FailiLogija(new PrintWriter("logi.txt", "UTF-8"));
     } else {
       logija = new KäsureaLogija();
     }

@@ -1,18 +1,14 @@
 import java.io.PrintWriter;
 
 public class FailiLogija {
-  PrintWriter hoiatusteFail, andmeFail;
+  PrintWriter logiFail;
 
-  FailiLogija(PrintWriter hoiatusteFail, PrintWriter andmeFail) {
-    this.hoiatusteFail = hoiatusteFail;
-    this.andmeFail = andmeFail;
+  FailiLogija(PrintWriter logiFail) {
+    this.logiFail = logiFail;
   }
 
-  void salvestaTeade(String teade, boolean onHoiatus) {
-    if (onHoiatus) {
-      hoiatusteFail.println(teade);
-    } else {
-      andmeFail.println(teade);
-    }
+  void logiFaili(String teade) {
+    logiFail.println(teade);
+    logiFail.flush(); // kirjuta kohe faili
   }
 }
