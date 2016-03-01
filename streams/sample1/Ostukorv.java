@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ostukorv {
-  String klient;
-  List<Toode> tooted;
+  private String klient;
+  private List<Toode> tooted;
 
   Ostukorv(String klient, List<Toode> tooted) {
     this.klient = klient;

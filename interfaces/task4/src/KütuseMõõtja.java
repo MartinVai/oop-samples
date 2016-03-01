@@ -1,5 +1,5 @@
 public class KütuseMõõtja {
-  Logija logija;
+  private Logija logija;
 
   KütuseMõõtja(Logija logija) {
     this.logija = logija;

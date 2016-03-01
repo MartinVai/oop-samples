@@ -1,7 +1,7 @@
 import java.io.PrintWriter;
 
 public class FailiLogija {
-  PrintWriter logiFail;
+  private PrintWriter logiFail;
 
   FailiLogija(PrintWriter logiFail) {
     this.logiFail = logiFail;

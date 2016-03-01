@@ -2,9 +2,9 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 
 public class Toode {
-  String nimi;
-  double kogus;
-  double tükiHind;
+  private String nimi;
+  private double kogus;
+  private double tükiHind;
 
   Toode(String nimi, double kogus, double tükiHind) {
     this.nimi = nimi;

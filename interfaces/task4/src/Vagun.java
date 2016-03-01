@@ -1,6 +1,6 @@
 public class Vagun {
 
-  int kütus;
+  private int kütus;
 
   Vagun(int kütus) {
     this.kütus = kütus;

@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public class Õpilaspilet implements Dokument {
-  int sünniaasta;
+  private int sünniaasta;
 
   Õpilaspilet(int sünniaasta) {
     this.sünniaasta = sünniaasta;

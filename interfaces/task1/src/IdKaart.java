@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public class IdKaart {
-  String isikukood;
+  private String isikukood;
 
   IdKaart(String isikukood) {
     this.isikukood = isikukood;
