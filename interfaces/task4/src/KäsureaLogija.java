@@ -1,5 +1,7 @@
 public class KäsureaLogija {
-  void logiKäsureale(String teade) {
+
+  public void logiKäsureale(String teade) {
     System.out.println(teade);
   }
+
 }

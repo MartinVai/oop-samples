@@ -7,12 +7,12 @@ public class Ostukorv {
   private String klient;
   private List<Toode> tooted;
 
-  Ostukorv(String klient, List<Toode> tooted) {
+  public Ostukorv(String klient, List<Toode> tooted) {
     this.klient = klient;
     this.tooted = tooted;
   }
 
-  void salvesta(DataOutputStream dos) throws Exception {
+  public void salvesta(DataOutputStream dos) throws Exception {
     dos.writeUTF(klient);
     dos.writeInt(tooted.size());
     for (Toode toode : tooted) {
@@ -20,7 +20,7 @@ public class Ostukorv {
     }
   }
 
-  static Ostukorv laadi(DataInputStream dis) throws Exception {
+  public static Ostukorv laadi(DataInputStream dis) throws Exception {
     String klient = dis.readUTF();
     List<Toode> tooted = new ArrayList<>();
     int tooteid = dis.readInt();

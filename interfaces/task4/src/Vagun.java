@@ -2,11 +2,11 @@ public class Vagun {
 
   private int kütus;
 
-  Vagun(int kütus) {
+  public Vagun(int kütus) {
     this.kütus = kütus;
   }
 
-  int kütuseTase() {
+  public int kütuseTase() {
     return kütus;
   }
 

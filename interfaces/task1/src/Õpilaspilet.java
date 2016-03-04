@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class Õpilaspilet {
   private int sünniaasta;
 
-  Õpilaspilet(int sünniaasta) {
+  public Õpilaspilet(int sünniaasta) {
     this.sünniaasta = sünniaasta;
   }
 

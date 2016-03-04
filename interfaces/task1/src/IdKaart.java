@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class IdKaart {
   private String isikukood;
 
-  IdKaart(String isikukood) {
+  public IdKaart(String isikukood) {
     this.isikukood = isikukood;
   }
 
@@ -12,7 +12,7 @@ public class IdKaart {
     return sünniaasta() <= praeguneAasta - 12;
   }
 
-  int sünniaasta() { // 4. praktikumi 2. harjutus
+  private int sünniaasta() { // 4. praktikumi 2. harjutus
     int algus = Integer.parseInt(isikukood.substring(0, 1));
     int aasta = Integer.parseInt(isikukood.substring(1, 3));
     if (algus <= 2)

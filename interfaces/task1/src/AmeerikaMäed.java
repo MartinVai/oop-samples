@@ -1,5 +1,5 @@
 public class AmeerikaMäed {
-  boolean vanusedSobivad(IdKaart[] idKaardid, Õpilaspilet[] õpilaspiletid) {
+  public boolean vanusedSobivad(IdKaart[] idKaardid, Õpilaspilet[] õpilaspiletid) {
     for (IdKaart id : idKaardid) {
       if (!id.onVähemalt12Aastane())
         return false;

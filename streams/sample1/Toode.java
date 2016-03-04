@@ -6,19 +6,19 @@ public class Toode {
   private double kogus;
   private double tükiHind;
 
-  Toode(String nimi, double kogus, double tükiHind) {
+  public Toode(String nimi, double kogus, double tükiHind) {
     this.nimi = nimi;
     this.kogus = kogus;
     this.tükiHind = tükiHind;
   }
 
-  void salvesta(DataOutputStream dos) throws Exception {
+  public void salvesta(DataOutputStream dos) throws Exception {
     dos.writeUTF(nimi);
     dos.writeDouble(kogus);
     dos.writeDouble(tükiHind);
   }
 
-  static Toode laadi(DataInputStream dis) throws Exception {
+  public static Toode laadi(DataInputStream dis) throws Exception {
     String nimi = dis.readUTF();
     double kogus = dis.readDouble();
     double tükiHind = dis.readDouble();
